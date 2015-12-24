@@ -4,7 +4,7 @@
   <subtitle><![CDATA[专注前端100年]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-12-24T13:42:56.000Z</updated>
+  <updated>2015-12-24T15:21:21.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -13,6 +13,74 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[组件规范]]></title>
+    <link href="http://yoursite.com/2015/12/24/%E7%BB%84%E4%BB%B6%E8%A7%84%E8%8C%83/"/>
+    <id>http://yoursite.com/2015/12/24/组件规范/</id>
+    <published>2015-12-24T15:19:45.000Z</published>
+    <updated>2015-12-24T15:21:21.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="组件的管理的策略">组件的管理的策略</h2><p>Browserify + npm</p>
+<p>一个前端的组件就是一个 nodeJs 的 module。所以写一个前端组件的方式就和写一个nodeJs 模块的方式是一样的。模块的引用方式也是相同的。</p>
+<p>按理来说来说组件应该使用 npm 管理，但是由于目前 npm 的私有库还没有部署。我们采用折中的方式，使用 git 来手动载入组件。在下面的操作步骤中会具体介绍。</p>
+<h2 id="组件的目录规范">组件的目录规范</h2><p>首先来看一个项目目录</p>
+<ul>
+<li>project<ul>
+<li>dist</li>
+<li>src</li>
+<li>node_modules<ul>
+<li>jquery</li>
+<li>myplug</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>组件是放在node_modules目录下的，放在node_modules下的组件 在文件中可以直接引用，而不用添加目录。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> $ = <span class="built_in">require</span>(<span class="string">'jquery'</span>);</span><br><span class="line"><span class="keyword">var</span> myplug = <span class="built_in">require</span>(<span class="string">'myplug'</span>);</span><br></pre></td></tr></table></figure></p>
+<h3 id="组件内部的目录">组件内部的目录</h3><p>组件内部的目录可以根据需要灵活改变</p>
+<h4 id="简单组件的目录">简单组件的目录</h4><p>如果组件比较简单只有一个文件，就采用下面的目录</p>
+<ul>
+<li>myplug<ul>
+<li>myplug.js</li>
+<li>demo</li>
+<li>package.json</li>
+<li>readme.md</li>
+</ul>
+</li>
+</ul>
+<p>demo 目录下写组件使用的样例；readme.md文件中写组件的用法；</p>
+<p>package.json文件中指明组件的必要信息，比如:组件的名字、组件的描述、组件的版本号、组件的主文件、组件的依赖等。<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  "<span class="attribute">name</span>": <span class="value"><span class="string">"myplug"</span></span>,</span><br><span class="line">  "<span class="attribute">description</span>": <span class="value"><span class="string">"JavaScript library for DOM operations"</span></span>,</span><br><span class="line">  "<span class="attribute">version</span>": <span class="value"><span class="string">"2.1.4"</span></span>,</span><br><span class="line">  "<span class="attribute">main</span>": <span class="value"><span class="string">"dist/jquery.js"</span></span>,</span><br><span class="line">  "<span class="attribute">dependencies</span>": <span class="value">&#123;&#125;</span><br><span class="line"></span>&#125;</span><br></pre></td></tr></table></figure></p>
+<h4 id="复杂的组件目录">复杂的组件目录</h4><p>如果组件非常复杂，需要进行构建</p>
+<ul>
+<li>myplug<ul>
+<li>dist<ul>
+<li>myplug.js</li>
+</ul>
+</li>
+<li>src <ul>
+<li>myplug.js</li>
+<li>otherfile</li>
+</ul>
+</li>
+<li>demo</li>
+<li>package.json</li>
+<li>readme.md</li>
+</ul>
+</li>
+</ul>
+<h2 id="组件内容的模块化支持">组件内容的模块化支持</h2><p>为了适应当前的模块化策略，我们只需要加上<a href="http://www.ruanyifeng.com/blog/2012/10/asynchronous_module_definition.html" target="_blank" rel="external">CommonJS</a>模块化支持，但是为了适应<a href="http://www.ruanyifeng.com/blog/2012/10/asynchronous_module_definition.html" target="_blank" rel="external">各种模块化策略</a>，让组件更加通用，我们为模块加上AMD,CMD的模块化支持。模块化支持的代码如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> myPlug = &#123;&#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/* 模块化策略兼容代码 */</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">typeof</span> <span class="built_in">module</span> !== <span class="string">'undefined'</span> &amp;&amp; <span class="keyword">typeof</span> exports === <span class="string">'object'</span>) &#123;</span><br><span class="line">        <span class="built_in">module</span>.exports = myPlug;</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (<span class="keyword">typeof</span> define === <span class="string">'function'</span> &amp;&amp; (define.amd || define.cmd)) &#123;</span><br><span class="line">        define(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> myPlug;</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="built_in">window</span>.myPlug = myPlug;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;())</span><br></pre></td></tr></table></figure>
+<p>这样以来，不管是使用 seaJs 还是 requireJs 做模块化，我们都能轻松引入我们的插件了。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="组件的管理的策略">组件的管理的策略</h2><p>Browserify + npm</p>
+<p>一个前端的组件就是一个 nodeJs 的 module。所以写一个前端组件的方式就和写一个nodeJs 模块的方式是一样的。模块的引用方式也是相同的。</p>
+<p]]>
+    </summary>
+    
+      <category term="前端规范" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[关于手机屏幕适配]]></title>
@@ -475,28 +543,6 @@ images
   </entry>
   
   <entry>
-    <title><![CDATA[jquery]]></title>
-    <link href="http://yoursite.com/2015/10/21/b/"/>
-    <id>http://yoursite.com/2015/10/21/b/</id>
-    <published>2015-10-21T02:34:12.000Z</published>
-    <updated>2015-12-03T01:25:09.000Z</updated>
-    <content type="html"><![CDATA[<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    "<span class="attribute">title</span>":<span class="value"><span class="string">"asdf"</span></span><br><span class="line"></span>&#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ab</span> </span>&#123;</span><br><span class="line">    a:<span class="number">1</span>,</span><br><span class="line">    c:<span class="number">2</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#box"</span>).goto();</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">asdl</span>(<span class="params">sdf</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log();</span><br><span class="line">    <span class="built_in">document</span>.getElementById();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-    <summary type="html">
-    <![CDATA[<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class=]]>
-    </summary>
-    
-      <category term="abc" scheme="http://yoursite.com/tags/abc/"/>
-    
-      <category term="other" scheme="http://yoursite.com/categories/other/"/>
-    
-      <category term="theother" scheme="http://yoursite.com/categories/other/theother/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[辨析 Sass 中的 Map 和 List]]></title>
     <link href="http://yoursite.com/2015/10/21/c/"/>
     <id>http://yoursite.com/2015/10/21/c/</id>
@@ -592,6 +638,28 @@ images
       <category term="abc" scheme="http://yoursite.com/tags/abc/"/>
     
       <category term="other" scheme="http://yoursite.com/categories/other/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[jquery]]></title>
+    <link href="http://yoursite.com/2015/10/21/b/"/>
+    <id>http://yoursite.com/2015/10/21/b/</id>
+    <published>2015-10-21T02:34:12.000Z</published>
+    <updated>2015-12-03T01:25:09.000Z</updated>
+    <content type="html"><![CDATA[<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    "<span class="attribute">title</span>":<span class="value"><span class="string">"asdf"</span></span><br><span class="line"></span>&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ab</span> </span>&#123;</span><br><span class="line">    a:<span class="number">1</span>,</span><br><span class="line">    c:<span class="number">2</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#box"</span>).goto();</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">asdl</span>(<span class="params">sdf</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log();</span><br><span class="line">    <span class="built_in">document</span>.getElementById();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+    <summary type="html">
+    <![CDATA[<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class=]]>
+    </summary>
+    
+      <category term="abc" scheme="http://yoursite.com/tags/abc/"/>
+    
+      <category term="other" scheme="http://yoursite.com/categories/other/"/>
+    
+      <category term="theother" scheme="http://yoursite.com/categories/other/theother/"/>
     
   </entry>
   
