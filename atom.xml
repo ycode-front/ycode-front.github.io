@@ -3,9 +3,9 @@
   <title><![CDATA[云极客前端技术文档]]></title>
   <subtitle><![CDATA[专注前端100年]]></subtitle>
   <link href="/atom.xml" rel="self"/>
-  <link href="http://yoursite.com/"/>
+  <link href="http://ycode-front.github.io/"/>
   <updated>2015-12-24T15:21:21.000Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://ycode-front.github.io/</id>
   
   <author>
     <name><![CDATA[John Doe]]></name>
@@ -16,8 +16,8 @@
   
   <entry>
     <title><![CDATA[组件规范]]></title>
-    <link href="http://yoursite.com/2015/12/24/%E7%BB%84%E4%BB%B6%E8%A7%84%E8%8C%83/"/>
-    <id>http://yoursite.com/2015/12/24/组件规范/</id>
+    <link href="http://ycode-front.github.io/2015/12/24/%E7%BB%84%E4%BB%B6%E8%A7%84%E8%8C%83/"/>
+    <id>http://ycode-front.github.io/2015/12/24/组件规范/</id>
     <published>2015-12-24T15:19:45.000Z</published>
     <updated>2015-12-24T15:21:21.000Z</updated>
     <content type="html"><![CDATA[<h2 id="组件的管理的策略">组件的管理的策略</h2><p>Browserify + npm</p>
@@ -78,14 +78,14 @@
 <p]]>
     </summary>
     
-      <category term="前端规范" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/"/>
+      <category term="前端规范" scheme="http://ycode-front.github.io/categories/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[关于手机屏幕适配]]></title>
-    <link href="http://yoursite.com/2015/12/24/%E5%85%B3%E4%BA%8E%E6%89%8B%E6%9C%BA%E5%B1%8F%E5%B9%95%E9%80%82%E9%85%8D/"/>
-    <id>http://yoursite.com/2015/12/24/关于手机屏幕适配/</id>
+    <link href="http://ycode-front.github.io/2015/12/24/%E5%85%B3%E4%BA%8E%E6%89%8B%E6%9C%BA%E5%B1%8F%E5%B9%95%E9%80%82%E9%85%8D/"/>
+    <id>http://ycode-front.github.io/2015/12/24/关于手机屏幕适配/</id>
     <published>2015-12-24T13:28:28.000Z</published>
     <updated>2015-12-24T13:42:56.000Z</updated>
     <content type="html"><![CDATA[<h2 id="设备本身的适配策略">设备本身的适配策略</h2><p>ios和Android的适配策略是不一样的。</p>
@@ -121,14 +121,14 @@
 <p>对于ios,一个设备含有越多的<a href="https://www.baidu.com/s?ie=UTF-8&amp;wd=%E9%80%BB%]]>
     </summary>
     
-      <category term="文章" scheme="http://yoursite.com/categories/%E6%96%87%E7%AB%A0/"/>
+      <category term="文章" scheme="http://ycode-front.github.io/categories/%E6%96%87%E7%AB%A0/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[目录规范]]></title>
-    <link href="http://yoursite.com/2015/12/07/%E7%9B%AE%E5%BD%95%E8%A7%84%E8%8C%83/"/>
-    <id>http://yoursite.com/2015/12/07/目录规范/</id>
+    <link href="http://ycode-front.github.io/2015/12/07/%E7%9B%AE%E5%BD%95%E8%A7%84%E8%8C%83/"/>
+    <id>http://ycode-front.github.io/2015/12/07/目录规范/</id>
     <published>2015-12-07T09:16:02.000Z</published>
     <updated>2015-12-07T09:31:39.000Z</updated>
     <content type="html"><![CDATA[<h2 id="文件命名">文件命名</h2><p>所有文件命名采用小写字母，多字母的情况下分割符号采用<strong>中划线</strong> <code>-</code></p>
@@ -155,16 +155,16 @@ images
 <pre><code>user-info<span class="clas]]>
     </summary>
     
-      <category term="前端规范" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/"/>
+      <category term="前端规范" scheme="http://ycode-front.github.io/categories/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/"/>
     
-      <category term="前端代码规范" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"/>
+      <category term="前端代码规范" scheme="http://ycode-front.github.io/categories/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[文档系统使用手册]]></title>
-    <link href="http://yoursite.com/2015/12/07/%E6%96%87%E6%A1%A3%E7%B3%BB%E7%BB%9F%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/"/>
-    <id>http://yoursite.com/2015/12/07/文档系统使用手册/</id>
+    <link href="http://ycode-front.github.io/2015/12/07/%E6%96%87%E6%A1%A3%E7%B3%BB%E7%BB%9F%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/"/>
+    <id>http://ycode-front.github.io/2015/12/07/文档系统使用手册/</id>
     <published>2015-12-07T02:55:53.000Z</published>
     <updated>2015-12-07T04:35:59.000Z</updated>
     <content type="html"><![CDATA[<h2 id="环境准备">环境准备</h2><h3 id="github_环境">github 环境</h3><p>配置ssh,具体步骤见<a href="https://help.github.com/articles/generating-ssh-keys" target="_blank" rel="external">教程</a></p>
@@ -193,21 +193,21 @@ images
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server #&#24320;&#21551;&#26412;&#22320;&#26381;&#21153;&#22120;&#39044;&#35272;</span><br></pre></td></tr></table></figure>
 <h2 id="文档系统原理">文档系统原理</h2><p>这个文档系统是基于 <a href="https://hexo.io" target="_blank" rel="external">hexo</a> 这个静态站点发布工具的。所以了解一下基本的hexo命令对于文档系统的使用大有帮助。</p>
 <p>文档系统分为<strong>源代码</strong>和<strong>发布代码</strong>两部分，类似前端构建中的开发目录和发布目录。</p>
-<p><strong>发布代码</strong>是直接可以打开的页面。这部分代码被部署到<a href="https://pages.github.com" target="_blank" rel="external">github pages</a>上。<a href="https://pages.github.com" target="_blank" rel="external">github pages</a> 可以理解为一个静态服务器，将<strong>发布代码</strong>发布到pages的方法非常简单，就是新建一个特殊的github仓库，然后将代码上传到这个仓库，就可以使用指定的域名进行访问了。在这个文档系统中，这个仓库是<a href="git@github.com:ycode-front/ycode-front.github.io.git">git@github.com:ycode-front/ycode-front.github.io.git</a>，而域名是<a href="http://ycode-front.github.io" target="_blank" rel="external">http://ycode-front.github.io</a>.更多的信息可以查看<a href="https://pages.github.com" target="_blank" rel="external">github pages</a>。实际上发布是自动化，hexo在发布的时候，会自动把发布代码上传到指定的仓库，所以我们不用关注这个发布仓库。</p>
+<p><strong>发布代码</strong>是直接可以打开的页面。这部分代码被部署到<a href="https://pages.github.com" target="_blank" rel="external">github pages</a>上。<a href="https://pages.github.com" target="_blank" rel="external">github pages</a> 可以理解为一个静态服务器，将<strong>发布代码</strong>发布到pages的方法非常简单，就是新建一个特殊的github仓库，然后将代码上传到这个仓库，就可以使用指定的域名进行访问了。在这个文档系统中，这个仓库是<a href="git@github.com:ycode-front/ycode-front.github.io.git">git@github.com:ycode-front/ycode-front.github.io.git</a>，而域名是<a href="http://ycode-front.github.io">http://ycode-front.github.io</a>.更多的信息可以查看<a href="https://pages.github.com" target="_blank" rel="external">github pages</a>。实际上发布是自动化，hexo在发布的时候，会自动把发布代码上传到指定的仓库，所以我们不用关注这个发布仓库。</p>
 <p><strong>源代码</strong>也被放在github上，仓库是<a href="git@github.com:ycode-front/document.git">git@github.com:ycode-front/document.git</a>,将它称为源代码仓库。我们新建文档，修改文档都是在源代码中进行的.在修改之前需要拉去源代码，在修改之后需要推送源代码，因为文档的维护不止一个人。其实就和我们开发项目一样，最后进行发布。</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<h2 id="环境准备">环境准备</h2><h3 id="github_环境">github 环境</h3><p>配置ssh,具体步骤见<a href="https://help.github.com/articles/generating-ssh-keys" target=]]>
     </summary>
     
-      <category term="使用手册" scheme="http://yoursite.com/categories/%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/"/>
+      <category term="使用手册" scheme="http://ycode-front.github.io/categories/%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[文档的发布]]></title>
-    <link href="http://yoursite.com/2015/12/07/%E6%96%87%E6%A1%A3%E7%9A%84%E5%8F%91%E5%B8%83/"/>
-    <id>http://yoursite.com/2015/12/07/文档的发布/</id>
+    <link href="http://ycode-front.github.io/2015/12/07/%E6%96%87%E6%A1%A3%E7%9A%84%E5%8F%91%E5%B8%83/"/>
+    <id>http://ycode-front.github.io/2015/12/07/文档的发布/</id>
     <published>2015-12-07T01:16:38.000Z</published>
     <updated>2015-12-07T01:16:38.000Z</updated>
     <content type="html"></content>
@@ -219,8 +219,8 @@ images
   
   <entry>
     <title><![CDATA[html注释规范]]></title>
-    <link href="http://yoursite.com/2015/12/04/html%E6%B3%A8%E9%87%8A%E8%A7%84%E8%8C%83/"/>
-    <id>http://yoursite.com/2015/12/04/html注释规范/</id>
+    <link href="http://ycode-front.github.io/2015/12/04/html%E6%B3%A8%E9%87%8A%E8%A7%84%E8%8C%83/"/>
+    <id>http://ycode-front.github.io/2015/12/04/html注释规范/</id>
     <published>2015-12-04T03:20:08.000Z</published>
     <updated>2015-12-04T06:50:12.000Z</updated>
     <content type="html"><![CDATA[<h2 id="内容的注释">内容的注释</h2><p>显然不必给每个html模块都加上注释，给一些大的比较关键的html模块加上注释</p>
@@ -237,16 +237,16 @@ images
 <fi]]>
     </summary>
     
-      <category term="前端规范" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/"/>
+      <category term="前端规范" scheme="http://ycode-front.github.io/categories/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/"/>
     
-      <category term="前端代码规范" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"/>
+      <category term="前端代码规范" scheme="http://ycode-front.github.io/categories/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[html代码规范]]></title>
-    <link href="http://yoursite.com/2015/12/04/html%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"/>
-    <id>http://yoursite.com/2015/12/04/html代码规范/</id>
+    <link href="http://ycode-front.github.io/2015/12/04/html%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"/>
+    <id>http://ycode-front.github.io/2015/12/04/html代码规范/</id>
     <published>2015-12-04T01:47:03.000Z</published>
     <updated>2015-12-07T09:27:41.000Z</updated>
     <content type="html"><![CDATA[<h2 id="文档类型声明">文档类型声明</h2><p>采用html5的文档类型声明。</p>
@@ -278,16 +278,16 @@ images
 <figure class="highlight html"><table><tr><td class="gutter"><pre]]>
     </summary>
     
-      <category term="前端规范" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/"/>
+      <category term="前端规范" scheme="http://ycode-front.github.io/categories/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/"/>
     
-      <category term="前端代码规范" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"/>
+      <category term="前端代码规范" scheme="http://ycode-front.github.io/categories/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[javascript注释规范]]></title>
-    <link href="http://yoursite.com/2015/12/03/javascript%E6%B3%A8%E9%87%8A%E8%A7%84%E8%8C%83/"/>
-    <id>http://yoursite.com/2015/12/03/javascript注释规范/</id>
+    <link href="http://ycode-front.github.io/2015/12/03/javascript%E6%B3%A8%E9%87%8A%E8%A7%84%E8%8C%83/"/>
+    <id>http://ycode-front.github.io/2015/12/03/javascript注释规范/</id>
     <published>2015-12-03T13:26:45.000Z</published>
     <updated>2015-12-03T14:38:22.000Z</updated>
     <content type="html"><![CDATA[<h2 id="模块的注释">模块的注释</h2><p>在模块的注释中还可以添加更多的信息，比如日期等等。</p>
@@ -308,16 +308,16 @@ images
 <figure class="highlight javascript"><table><t]]>
     </summary>
     
-      <category term="前端规范" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/"/>
+      <category term="前端规范" scheme="http://ycode-front.github.io/categories/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/"/>
     
-      <category term="前端代码规范" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"/>
+      <category term="前端代码规范" scheme="http://ycode-front.github.io/categories/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[arrow-left]]></title>
-    <link href="http://yoursite.com/2015/11/23/arrow-left/"/>
-    <id>http://yoursite.com/2015/11/23/arrow-left/</id>
+    <link href="http://ycode-front.github.io/2015/11/23/arrow-left/"/>
+    <id>http://ycode-front.github.io/2015/11/23/arrow-left/</id>
     <published>2015-11-23T12:29:38.000Z</published>
     <updated>2015-11-23T12:44:58.000Z</updated>
     <content type="html"><![CDATA[<p>左箭头</p>
@@ -387,14 +387,14 @@ images
 <figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre]]>
     </summary>
     
-      <category term="less图标库" scheme="http://yoursite.com/categories/less%E5%9B%BE%E6%A0%87%E5%BA%93/"/>
+      <category term="less图标库" scheme="http://ycode-front.github.io/categories/less%E5%9B%BE%E6%A0%87%E5%BA%93/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[简介]]></title>
-    <link href="http://yoursite.com/2015/11/23/less%E5%9B%BE%E6%A0%87%E8%AE%B2%E8%A7%A3/"/>
-    <id>http://yoursite.com/2015/11/23/less图标讲解/</id>
+    <link href="http://ycode-front.github.io/2015/11/23/less%E5%9B%BE%E6%A0%87%E8%AE%B2%E8%A7%A3/"/>
+    <id>http://ycode-front.github.io/2015/11/23/less图标讲解/</id>
     <published>2015-11-23T11:59:39.000Z</published>
     <updated>2015-11-23T12:02:24.000Z</updated>
     <content type="html"><![CDATA[<p>less图标库是 使用less函数写的一些简单的图标。可以传入参数控制图标的颜色，大小等属性。</p>
@@ -404,14 +404,14 @@ images
 ]]>
     </summary>
     
-      <category term="less图标库" scheme="http://yoursite.com/categories/less%E5%9B%BE%E6%A0%87%E5%BA%93/"/>
+      <category term="less图标库" scheme="http://ycode-front.github.io/categories/less%E5%9B%BE%E6%A0%87%E5%BA%93/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[add-btn]]></title>
-    <link href="http://yoursite.com/2015/11/23/%E5%8A%A0%E5%8F%B7%E6%8C%89%E9%92%AE/"/>
-    <id>http://yoursite.com/2015/11/23/加号按钮/</id>
+    <link href="http://ycode-front.github.io/2015/11/23/%E5%8A%A0%E5%8F%B7%E6%8C%89%E9%92%AE/"/>
+    <id>http://ycode-front.github.io/2015/11/23/加号按钮/</id>
     <published>2015-11-23T09:34:17.000Z</published>
     <updated>2015-11-23T12:28:19.000Z</updated>
     <content type="html"><![CDATA[<p>按钮加号</p>
@@ -484,14 +484,14 @@ images
 <figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pr]]>
     </summary>
     
-      <category term="less图标库" scheme="http://yoursite.com/categories/less%E5%9B%BE%E6%A0%87%E5%BA%93/"/>
+      <category term="less图标库" scheme="http://ycode-front.github.io/categories/less%E5%9B%BE%E6%A0%87%E5%BA%93/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[javascript 代码规范]]></title>
-    <link href="http://yoursite.com/2015/11/18/javascript%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"/>
-    <id>http://yoursite.com/2015/11/18/javascript代码规范/</id>
+    <link href="http://ycode-front.github.io/2015/11/18/javascript%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"/>
+    <id>http://ycode-front.github.io/2015/11/18/javascript代码规范/</id>
     <published>2015-11-18T01:26:36.000Z</published>
     <updated>2015-12-07T09:39:48.000Z</updated>
     <content type="html"><![CDATA[<h2 id="使用严格模式">使用严格模式</h2><p>使用严格模式会对代码进行更严格的检测，避免一些意想不到错误，同时也是为将来的js版本做兼容。严格模式的规则可以参考<a href="http://www.ruanyifeng.com/blog/2013/01/javascript_strict_mode.html" target="_blank" rel="external">Javascript 严格模式详解</a>.</p>
@@ -536,16 +536,16 @@ images
     <![CDATA[<h2 id="使用严格模式">使用严格模式</h2><p>使用严格模式会对代码进行更严格的检测，避免一些意想不到错误，同时也是为将来的js版本做兼容。严格模式的规则可以参考<a href="http://www.ruanyifeng.com/blog/2013/01/javas]]>
     </summary>
     
-      <category term="前端规范" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/"/>
+      <category term="前端规范" scheme="http://ycode-front.github.io/categories/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/"/>
     
-      <category term="前端代码规范" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"/>
+      <category term="前端代码规范" scheme="http://ycode-front.github.io/categories/%E5%89%8D%E7%AB%AF%E8%A7%84%E8%8C%83/%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[辨析 Sass 中的 Map 和 List]]></title>
-    <link href="http://yoursite.com/2015/10/21/c/"/>
-    <id>http://yoursite.com/2015/10/21/c/</id>
+    <link href="http://ycode-front.github.io/2015/10/21/c/"/>
+    <id>http://ycode-front.github.io/2015/10/21/c/</id>
     <published>2015-10-21T02:34:12.000Z</published>
     <updated>2015-12-03T01:25:31.000Z</updated>
     <content type="html"><![CDATA[<p>如果你使用过 Sass 3.3 之前的版本，那么你一定对那段时光颇有感触，那时候没有现如今这么好的条件，那时候的 Map 还只能用多重列表（lists of list）来模拟。多重列表可以实现复杂数据的嵌套定义，但却不是以键值对的形式实现的，所有当我们需要获取其中特定的某一项时就会比较麻烦。Map 这种数据类型天生就是基于键值对的形式，非常便于组织数据。</p>
@@ -635,16 +635,16 @@ images
     
     </summary>
     
-      <category term="abc" scheme="http://yoursite.com/tags/abc/"/>
+      <category term="abc" scheme="http://ycode-front.github.io/tags/abc/"/>
     
-      <category term="other" scheme="http://yoursite.com/categories/other/"/>
+      <category term="other" scheme="http://ycode-front.github.io/categories/other/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[jquery]]></title>
-    <link href="http://yoursite.com/2015/10/21/b/"/>
-    <id>http://yoursite.com/2015/10/21/b/</id>
+    <link href="http://ycode-front.github.io/2015/10/21/b/"/>
+    <id>http://ycode-front.github.io/2015/10/21/b/</id>
     <published>2015-10-21T02:34:12.000Z</published>
     <updated>2015-12-03T01:25:09.000Z</updated>
     <content type="html"><![CDATA[<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    "<span class="attribute">title</span>":<span class="value"><span class="string">"asdf"</span></span><br><span class="line"></span>&#125;</span><br></pre></td></tr></table></figure>
@@ -655,18 +655,18 @@ images
     <![CDATA[<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class=]]>
     </summary>
     
-      <category term="abc" scheme="http://yoursite.com/tags/abc/"/>
+      <category term="abc" scheme="http://ycode-front.github.io/tags/abc/"/>
     
-      <category term="other" scheme="http://yoursite.com/categories/other/"/>
+      <category term="other" scheme="http://ycode-front.github.io/categories/other/"/>
     
-      <category term="theother" scheme="http://yoursite.com/categories/other/theother/"/>
+      <category term="theother" scheme="http://ycode-front.github.io/categories/other/theother/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[辨析 Sass 中的 Map 和 List]]></title>
-    <link href="http://yoursite.com/2015/10/21/a/"/>
-    <id>http://yoursite.com/2015/10/21/a/</id>
+    <link href="http://ycode-front.github.io/2015/10/21/a/"/>
+    <id>http://ycode-front.github.io/2015/10/21/a/</id>
     <published>2015-10-21T02:34:12.000Z</published>
     <updated>2015-11-23T14:45:15.000Z</updated>
     <content type="html"><![CDATA[<p>如果你使用过 Sass 3.3 之前的版本，那么你一定对那段时光颇有感触，那时候没有现如今这么好的条件，那时候的 Map 还只能用多重列表（lists of list）来模拟。多重列表可以实现复杂数据的嵌套定义，但却不是以键值对的形式实现的，所有当我们需要获取其中特定的某一项时就会比较麻烦。Map 这种数据类型天生就是基于键值对的形式，非常便于组织数据。</p>
@@ -756,7 +756,7 @@ images
     
     </summary>
     
-      <category term="abc" scheme="http://yoursite.com/tags/abc/"/>
+      <category term="abc" scheme="http://ycode-front.github.io/tags/abc/"/>
     
   </entry>
   
