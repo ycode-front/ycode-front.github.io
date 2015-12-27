@@ -39,7 +39,7 @@ hexo 环境1$ npm install hexo -g
 发布文章第一步 拉取最新代码在源代码目录下
 1$ git pull origin master
 第二步 创建一个文档在">
-<meta property="og:updated_time" content="2015-12-07T04:35:59.000Z">
+<meta property="og:updated_time" content="2015-12-25T07:52:05.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="文档系统使用手册">
 <meta name="twitter:description" content="环境准备github 环境配置ssh,具体步骤见教程
@@ -134,6 +134,8 @@ hexo 环境1$ npm install hexo -g
 <p>文档系统分为<strong>源代码</strong>和<strong>发布代码</strong>两部分，类似前端构建中的开发目录和发布目录。</p>
 <p><strong>发布代码</strong>是直接可以打开的页面。这部分代码被部署到<a href="https://pages.github.com" target="_blank" rel="external">github pages</a>上。<a href="https://pages.github.com" target="_blank" rel="external">github pages</a> 可以理解为一个静态服务器，将<strong>发布代码</strong>发布到pages的方法非常简单，就是新建一个特殊的github仓库，然后将代码上传到这个仓库，就可以使用指定的域名进行访问了。在这个文档系统中，这个仓库是<a href="git@github.com:ycode-front/ycode-front.github.io.git">git@github.com:ycode-front/ycode-front.github.io.git</a>，而域名是<a href="http://ycode-front.github.io">http://ycode-front.github.io</a>.更多的信息可以查看<a href="https://pages.github.com" target="_blank" rel="external">github pages</a>。实际上发布是自动化，hexo在发布的时候，会自动把发布代码上传到指定的仓库，所以我们不用关注这个发布仓库。</p>
 <p><strong>源代码</strong>也被放在github上，仓库是<a href="git@github.com:ycode-front/document.git">git@github.com:ycode-front/document.git</a>,将它称为源代码仓库。我们新建文档，修改文档都是在源代码中进行的.在修改之前需要拉去源代码，在修改之后需要推送源代码，因为文档的维护不止一个人。其实就和我们开发项目一样，最后进行发布。</p>
+<h3 id="demo演示">demo演示</h3><p>在文章中如果采用demo演示，建议采用 <a href="https://jsfiddle.net" target="_blank" rel="external">jsfiddle</a>。</p>
+<p>在 jsfiddle 中创建demo然后,将嵌入代码 复制到文章中即可。</p>
 
     
   </div>
