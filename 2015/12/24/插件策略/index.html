@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  
+  <title>插件策略 | 云极客前端技术文档</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  
+    <meta name="author" content="John Doe">
+  
+  
+    <meta name="description" content="组件的管理的策略Browserify + npm
+一个前端的组件就是一个 nodeJs 的 module。所以写一个前端组件的方式就和写一个nodeJs 模块的方式是一样的。模块的引用方式也是相同的。
+按理来说来说组件应该使用 npm 管理，但是由于目前 npm 的私有库还没有部署。我们采用折中的方式，使用 git 来手动载入组件。在下面的操作步骤中会具体介绍。
+组件的目录规范首先来看一个项目目录">
+  
+  <meta name="description" content="组件的管理的策略Browserify + npm
+一个前端的组件就是一个 nodeJs 的 module。所以写一个前端组件的方式就和写一个nodeJs 模块的方式是一样的。模块的引用方式也是相同的。
+按理来说来说组件应该使用 npm 管理，但是由于目前 npm 的私有库还没有部署。我们采用折中的方式，使用 git 来手动载入组件。在下面的操作步骤中会具体介绍。
+组件的目录规范首先来看一个项目目录">
+<meta property="og:type" content="article">
+<meta property="og:title" content="插件策略">
+<meta property="og:url" content="http://ycode-front.github.io/2015/12/24/插件策略/index.html">
+<meta property="og:site_name" content="云极客前端技术文档">
+<meta property="og:description" content="组件的管理的策略Browserify + npm
+一个前端的组件就是一个 nodeJs 的 module。所以写一个前端组件的方式就和写一个nodeJs 模块的方式是一样的。模块的引用方式也是相同的。
+按理来说来说组件应该使用 npm 管理，但是由于目前 npm 的私有库还没有部署。我们采用折中的方式，使用 git 来手动载入组件。在下面的操作步骤中会具体介绍。
+组件的目录规范首先来看一个项目目录">
+<meta property="og:updated_time" content="2016-01-06T16:55:30.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="插件策略">
+<meta name="twitter:description" content="组件的管理的策略Browserify + npm
+一个前端的组件就是一个 nodeJs 的 module。所以写一个前端组件的方式就和写一个nodeJs 模块的方式是一样的。模块的引用方式也是相同的。
+按理来说来说组件应该使用 npm 管理，但是由于目前 npm 的私有库还没有部署。我们采用折中的方式，使用 git 来手动载入组件。在下面的操作步骤中会具体介绍。
+组件的目录规范首先来看一个项目目录">
+  
+    <link rel="alternate" href="/atom.xml" title="云极客前端技术文档" type="application/atom+xml">
+  
+  
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+
+<body>
+  <div class="wrapper">
+    <header id="header">
+  <div class="title">
+    <h1><a href="/">云极客前端技术文档</a></h1>
+    <p><a href="/">专注前端100年</a></p>
+  </div>
+  <nav class="nav">
+    <ul>
+      
+        <li><a href="/categories/前端规范/">前端规范</a></li>
+      
+        <li><a href="/categories/文章/">文章</a></li>
+      
+        <li><a href="/categories/less图标库/">less图标库</a></li>
+      
+        <li><a href="/2015/12/07/文档系统使用手册/">使用我</a></li>
+      
+      
+        <li><a href="/atom.xml">RSS</a></li>
+      
+    </ul>
+    <div class="clearfix"></div>
+  </nav>
+  <div class="clearfix"></div>
+</header>
+    <div class="content"><article class="post">
+  <header>
+    
+      <div class="icon"></div>
+      <a href="/2015/12/24/插件策略/">
+  <time datetime="2015-12-24T15:19:45.000Z">
+    2015-12-24
+  </time>
+</a>
+    
+    
+  
+    <h1 class="title">插件策略</h1>
+  
+
+  </header>
+  
+  <div class="entry">
+    
+      <h2 id="组件的管理的策略">组件的管理的策略</h2><p>Browserify + npm</p>
+<p>一个前端的组件就是一个 nodeJs 的 module。所以写一个前端组件的方式就和写一个nodeJs 模块的方式是一样的。模块的引用方式也是相同的。</p>
+<p>按理来说来说组件应该使用 npm 管理，但是由于目前 npm 的私有库还没有部署。我们采用折中的方式，使用 git 来手动载入组件。在下面的操作步骤中会具体介绍。</p>
+<h2 id="组件的目录规范">组件的目录规范</h2><p>首先来看一个项目目录</p>
+<ul>
+<li>project<ul>
+<li>dist</li>
+<li>src</li>
+<li>node_modules<ul>
+<li>jquery</li>
+<li>myplug</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>组件是放在node_modules目录下的，放在node_modules下的组件 在文件中可以直接引用，而不用添加目录。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> $ = <span class="built_in">require</span>(<span class="string">'jquery'</span>);</span><br><span class="line"><span class="keyword">var</span> myplug = <span class="built_in">require</span>(<span class="string">'myplug'</span>);</span><br></pre></td></tr></table></figure></p>
+<h3 id="组件内部的目录">组件内部的目录</h3><p>组件内部的目录可以根据需要灵活改变</p>
+<h4 id="组件的目录">组件的目录</h4><ul>
+<li>myplug<ul>
+<li>myplug.js</li>
+<li>lib</li>
+<li>demo<ul>
+<li>src<ul>
+<li>demo.js</li>
+</ul>
+</li>
+<li>dist<ul>
+<li>demo.js</li>
+</ul>
+</li>
+<li>tradition<ul>
+<li>myplug.js</li>
+<li>myplug.min.js</li>
+</ul>
+</li>
+<li>demo.html</li>
+<li>demo-tradition.html</li>
+</ul>
+</li>
+<li>package.json</li>
+<li>readme.md</li>
+</ul>
+</li>
+</ul>
+<p>目录的解释</p>
+<ul>
+<li><p>myplug.js 是插件主文件</p>
+</li>
+<li><p>lib 如果插件比较复杂，可以分模块，模块写在lib目录下，而第三方的模块的引用采用npm</p>
+</li>
+<li><p>demo 目录下写组件使用的样例，样例同时也是对组件进行测试的目录,demo 目录下面有三个目录</p>
+<p>  src 目录下写组件文件</p>
+<p>  dist 目录下是src编译后的文件</p>
+<p>  tradition 目录下是传统方式引用的组件文件</p>
+<p>  demo.html 引用dist目录下文件</p>
+<p>  demo-tradition.html 引用trandition目录下的文件</p>
+</li>
+<li><p>readme.md文件中写组件的用法；</p>
+</li>
+</ul>
+<p>package.json文件中指明组件的必要信息，比如:组件的名字、组件的描述、组件的版本号、组件的主文件、组件的依赖等。<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  "<span class="attribute">name</span>": <span class="value"><span class="string">"myplug"</span></span>,</span><br><span class="line">  "<span class="attribute">description</span>": <span class="value"><span class="string">"JavaScript library for DOM operations"</span></span>,</span><br><span class="line">  "<span class="attribute">version</span>": <span class="value"><span class="string">"2.1.4"</span></span>,</span><br><span class="line">  "<span class="attribute">main</span>": <span class="value"><span class="string">"dist/jquery.js"</span></span>,</span><br><span class="line">  "<span class="attribute">dependencies</span>": <span class="value">&#123;&#125;</span><br><span class="line"></span>&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="编写组件">编写组件</h2><h3 id="组件初始化工具">组件初始化工具</h3><h3 id="组件的模块化支持">组件的模块化支持</h3><p><del>为了适应当前的模块化策略，我们只需要加上<a href="http://www.ruanyifeng.com/blog/2012/10/asynchronous_module_definition.html" target="_blank" rel="external">CommonJS</a>模块化支持，但是为了适应<a href="http://www.ruanyifeng.com/blog/2012/10/asynchronous_module_definition.html" target="_blank" rel="external">各种模块化策略</a>，让组件更加通用，我们为模块加上AMD,CMD的模块化支持。模块化支持的代码如下：，同时组件也兼容没有模块化策略下的使用。</del></p>
+<p>组件的定义分为下面三种，一一列举</p>
+<p>一. 不依赖jQuery的组件</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span><br><span class="line"> * [description]</span><br><span class="line"> * @module plugname</span><br><span class="line"> * @author author</span><br><span class="line"> */</span></span><br><span class="line"><span class="pi"></span><br><span class="line">'use strict'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* 引入依赖 */</span></span><br><span class="line"><span class="keyword">var</span> extend = <span class="built_in">require</span>(<span class="string">'extend'</span>);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Main</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Main.prototype.defaultOptions = &#123;</span><br><span class="line"></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span><br><span class="line"> * 初始化</span><br><span class="line"> * @param  &#123;Object&#125; options 用户选项</span><br><span class="line"> */</span></span><br><span class="line">Main.prototype.init = <span class="function"><span class="keyword">function</span>(<span class="params">options</span>) </span>&#123;</span><br><span class="line">    extend(<span class="keyword">this</span>, <span class="keyword">this</span>.defaultOptions, options);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 定义插件 */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* 定义插件 end */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span><br><span class="line"> * 导出插件</span><br><span class="line"> */</span></span><br><span class="line"><span class="built_in">module</span>.exports = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 对传统模块化方法的支持</span></span><br><span class="line"><span class="comment">/* @support tradition plugname(plugname) */</span></span><br></pre></td></tr></table></figure>
+<p>二. 依赖jQuery的组件</p>
+<p>其实就是在第一种情况下，包装了一个 jQuery IVF</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span><br><span class="line"> * [description]</span><br><span class="line"> * @module plugname</span><br><span class="line"> * @author author</span><br><span class="line"> */</span></span><br><span class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"><span class="pi"></span><br><span class="line">    'use strict'</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">/* 引入依赖 */</span></span><br><span class="line">    <span class="keyword">var</span> extend = <span class="built_in">require</span>(<span class="string">'extend'</span>);</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">Main</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Main.prototype.defaultOptions = &#123;</span><br><span class="line"></span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span><br><span class="line">     - 初始化</span><br><span class="line">     - @param  &#123;Object&#125; options 用户选项</span><br><span class="line">     */</span></span><br><span class="line">    Main.prototype.init = <span class="function"><span class="keyword">function</span>(<span class="params">options</span>) </span>&#123;</span><br><span class="line">        extend(<span class="keyword">this</span>, <span class="keyword">this</span>.defaultOptions, options);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/* 定义插件 */</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">/* 定义插件 end */</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span><br><span class="line">     - 导出插件</span><br><span class="line">     */</span></span><br><span class="line">    <span class="built_in">module</span>.exports = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 对传统模块化方法的支持</span></span><br><span class="line">    <span class="comment">/* @support tradition plugname(plugname) */</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>三. jQuery插件</p>
+<p>由于jQuery插件是挂载在jQuery全局变量下的，所以模块无需导出，在引用jQuery插件的时候也无需接收。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 引入一个jquery插件</span></span><br><span class="line">    <span class="built_in">require</span>(<span class="string">'depjQueryPlug'</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> Main = &#123;&#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 扩展全局变量</span></span><br><span class="line">    $.extend(&#123;</span><br><span class="line">        plugname: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 扩展原型</span></span><br><span class="line">    $.fn.extend(&#123;</span><br><span class="line">        plugname: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h3 id="对传统方式的支持">对传统方式的支持</h3><p>考虑到插件有可能不是在模块化环境下使用的，组件需要支持非模块化情况下的调用。在非模块化环境下，插件被暴露到window变量下，而对于jquery插件，其实并没有区别，无路如何，jquery 插件都是暴露在jQuery变量下的。所以无需考虑这种情况。</p>
+<p>对于普通插件，对非模块化的支持是在编译过程中进行的。插件被编译成支持传统方法的文件。</p>
+<p>请看这句话<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* @support tradition plugname(plugname) */</span></span><br></pre></td></tr></table></figure></p>
+<p>它在编译过程中会被替换为<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(!!<span class="built_in">window</span>.plugname)&#123;<span class="keyword">throw</span> <span class="keyword">new</span> <span class="built_in">Error</span>(<span class="string">'plugname'</span>)&#125;<span class="keyword">else</span>&#123;<span class="built_in">window</span>.plugname = <span class="built_in">module</span>.exports&#125;</span><br></pre></td></tr></table></figure></p>
+
+    
+  </div>
+  <footer>
+    
+      
+  <div class="categories">
+    <a class="categories-link" href="/categories/文章/">文章</a>
+  </div>
+
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+
+ <section id="comment">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="post-插件策略" data-title="插件策略" data-url="http://ycode-front.github.io/2015/12/24/插件策略/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:'undefined'};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+      </script>
+    <!-- 多说公共JS代码 end -->
+  </section>
+</div>
+  </div>
+  <footer id="footer"><div class="copyright">
+<div id="footer-copyright">Copyright © 2015 版权所有 <br><a href="http://www.ycode.cn/index.html" target="_blank">苏州云极客信息技术有限公司</a> 苏ICP备14040797
+                </div>
+<div class="clearfix"></div></footer>
+  <script src="//cdn.bootcss.com/jquery/1.8.0/jquery.min.js"></script>
+<script src="/js/scale.fix.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+<script type="text/javascript">
+  var duoshuoQuery = { short_name: 'ycode-front' };
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';
+    ds.async = true;
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script>
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+  (function($){
+    $('.fancybox').fancybox();
+  })(jQuery);
+</script>
+
+</body>
+</html>
