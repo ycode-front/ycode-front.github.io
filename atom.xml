@@ -4,7 +4,7 @@
   <subtitle><![CDATA[专注前端100年]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://ycode-front.github.io/"/>
-  <updated>2016-01-06T17:02:58.000Z</updated>
+  <updated>2016-01-07T01:00:13.000Z</updated>
   <id>http://ycode-front.github.io/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://ycode-front.github.io/2016/01/07/%E6%8F%92%E4%BB%B6%E7%AE%A1%E7%90%86%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C/"/>
     <id>http://ycode-front.github.io/2016/01/07/插件管理操作手册/</id>
     <published>2016-01-06T16:02:43.000Z</published>
-    <updated>2016-01-06T17:02:58.000Z</updated>
+    <updated>2016-01-07T01:00:13.000Z</updated>
     <content type="html"><![CDATA[<h2 id="插件的使用">插件的使用</h2><p>作为插件的消费者，了解如何获取和使用插件</p>
 <h3 id="搜索插件">搜索插件</h3><ol>
 <li><p>前往公司内部<a href="http://120.27.162.81:7002" target="_blank" rel="external">cnpm</a>站点搜索需要的插件</p>
@@ -115,14 +115,26 @@
 <ol>
 <li><p>在当前插件目录下进入 demo/src 目录，在demo.js 文件中对插件进行测试</p>
 </li>
-<li><p>运行<figure class="highlight"><figcaption><span>run demo```对demo进行预览</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;3. &#20445;&#30041;&#27979;&#35797;&#29992;&#20363;&#65292;&#20316;&#20026;demo&#10;&#10;### &#19978;&#20256;&#25554;&#20214;&#10;&#10;&#22312;&#25554;&#20214;&#27979;&#35797;&#23436;&#25104;&#20043;&#21518;&#23545;&#25554;&#20214;&#36827;&#34892;&#19978;&#20256;&#21644;&#21457;&#24067;&#10;&#10;#### &#19978;&#20256;&#21040; git &#20179;&#24211;&#10;1. &#26032;&#24314;git&#20179;&#24211;&#10;2. &#23558;&#20179;&#24211;&#21152;&#20837;&#21069;&#31471;&#39033;&#30446;&#32452;&#10;3. &#21021;&#22987;&#21270;&#25554;&#20214;&#30446;&#24405;</span><br></pre></td></tr></table></figure></p>
-<p> git init</p>
- <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="number">4.</span> 添加仓库地址</span><br></pre></td></tr></table></figure>
-<p> git remote add origin {仓库地址}</p>
- <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="number">5.</span> 提交推送代码</span><br><span class="line"></span><br><span class="line"><span class="preprocessor">#### 发布到 cnpm 站点</span></span><br><span class="line"></span><br><span class="line">切换到插件目录</span><br></pre></td></tr></table></figure>
+<li><p>运行<code>npm run demo</code>对demo进行预览</p>
+</li>
+<li><p>保留测试用例，作为demo</p>
 </li>
 </ol>
-<p>npm publish<br>```</p>
+<h3 id="上传插件">上传插件</h3><p>在插件测试完成之后对插件进行上传和发布</p>
+<h4 id="上传到_git_仓库">上传到 git 仓库</h4><ol>
+<li>新建git仓库</li>
+<li>将仓库加入前端项目组</li>
+<li><p>初始化插件目录</p>
+ <figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">git</span> init</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>添加仓库地址</p>
+ <figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="label">git</span> remote <span class="keyword">add </span>origin &#123;仓库地址&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>提交推送代码</p>
+</li>
+</ol>
+<h4 id="发布到_cnpm_站点">发布到 cnpm 站点</h4><p>切换到插件目录</p>
+<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">npm</span> publish</span><br></pre></td></tr></table></figure>
 ]]></content>
     <summary type="html">
     <![CDATA[<h2 id="插件的使用">插件的使用</h2><p>作为插件的消费者，了解如何获取和使用插件</p>
