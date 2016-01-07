@@ -4,7 +4,7 @@
   <subtitle><![CDATA[专注前端100年]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://ycode-front.github.io/"/>
-  <updated>2016-01-07T01:00:13.000Z</updated>
+  <updated>2016-01-07T01:12:02.000Z</updated>
   <id>http://ycode-front.github.io/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://ycode-front.github.io/2016/01/07/%E6%8F%92%E4%BB%B6%E7%AE%A1%E7%90%86%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C/"/>
     <id>http://ycode-front.github.io/2016/01/07/插件管理操作手册/</id>
     <published>2016-01-06T16:02:43.000Z</published>
-    <updated>2016-01-07T01:00:13.000Z</updated>
+    <updated>2016-01-07T01:12:02.000Z</updated>
     <content type="html"><![CDATA[<h2 id="插件的使用">插件的使用</h2><p>作为插件的消费者，了解如何获取和使用插件</p>
 <h3 id="搜索插件">搜索插件</h3><ol>
 <li><p>前往公司内部<a href="http://120.27.162.81:7002" target="_blank" rel="external">cnpm</a>站点搜索需要的插件</p>
@@ -51,10 +51,9 @@
 </li>
 </ol>
 <h2 id="插件的创建">插件的创建</h2><h3 id="插件目录初始化">插件目录初始化</h3><ol>
-<li><p>使用目录初始化工具对当前目录进行初始化</p>
- <figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">dirhelp</span> plug</span><br></pre></td></tr></table></figure>
-</li>
+<li>使用目录初始化工具对当前目录进行初始化</li>
 </ol>
+<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">~ dirhelp plug</span><br><span class="line">~ <span class="built_in">npm</span> i</span><br></pre></td></tr></table></figure>
 <h3 id="选择插件类型">选择插件类型</h3><p>目录初始化工具可以根据插件名称，使用不同的初始化成不同的目录</p>
 <p>如果插件名称为 jquery.plugname ,目录会初始化为jquery插件目录</p>
 <p>如果名称为其他，目录会初始化为一般插件</p>
