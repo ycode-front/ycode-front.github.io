@@ -66,6 +66,100 @@
   <header>
     
       <div class="icon"></div>
+      <a href="/2015/11/23/arrow-left/">
+  <time datetime="2015-11-23T12:29:38.000Z">
+    2015-11-23
+  </time>
+</a>
+    
+    
+  
+    <h1 class="title"><a href="/2015/11/23/arrow-left/">arrow-left</a></h1>
+  
+
+  </header>
+  
+  <div class="entry">
+    
+      <p>左箭头</p>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.arrow-left</span>(<span class="variable">@width</span>, <span class="variable">@height</span>, <span class="variable">@border</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="参数">参数</h2><table>
+<thead>
+<tr>
+<th style="text-align:center">参数名</th>
+<th style="text-align:center">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">@width</td>
+<td style="text-align:center">箭头的宽度</td>
+</tr>
+<tr>
+<td style="text-align:center">@height</td>
+<td style="text-align:center">箭头的高度</td>
+</tr>
+<tr>
+<td style="text-align:center">@border</td>
+<td style="text-align:center">箭头线条的宽度</td>
+</tr>
+</tbody>
+</table>
+<h2 id="demo">demo</h2><h3 id="代码">代码</h3><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.add-btn</span> &#123;</span><br><span class="line">    <span class="attribute">margin-top</span>: -<span class="number">15px</span>;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">50%</span>;</span><br><span class="line">    <span class="attribute">right</span>: <span class="number">45px</span>;</span><br><span class="line">    <span class="class">.ico-add</span>(<span class="number">30px</span>, gray, white);</span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="效果">效果</h3><p><i class="demo"></i></p>
+<style type="text/css">
+.demo {
+  margin: 10px 0;
+  width: 0.88888889rem;
+  height: 1.77777778rem;
+  position: relative;
+  display: inline-block;
+  -webkit-transform-origin: 50% 0%;
+  -webkit-transform: scaleY(1.25);
+  transform-origin: 50% 0%;
+  transform: scaleY(1.25);
+  position: relative;
+  top: 50%;
+  left: 2.5rem;
+}
+.demo:after {
+  content: '';
+  display: block;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 1.25707872rem;
+  height: 1.25707872rem;
+  border-left: 2px solid #999999;
+  border-bottom: 2px solid #999999;
+  position: absolute;
+  top: 0.26034953rem;
+  left: 0.26034953rem;
+  -webkit-transform: rotate(45deg);
+  -webkit-transform-origin: 50% 50%;
+  transform: rotate(45deg);
+  transform-origin: 50% 50%;
+}
+</style>
+
+
+<h2 id="源代码">源代码</h2><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.arrow-left</span>(<span class="variable">@width</span>, <span class="variable">@height</span>, <span class="variable">@border</span>) &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="variable">@width</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">2</span>*<span class="variable">@width</span>;</span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">    <span class="attribute">display</span>: inline-block;</span><br><span class="line">    <span class="keyword">&amp;</span><span class="pseudo">:after</span> &#123;</span><br><span class="line">        <span class="attribute">content</span>: <span class="string">''</span>;</span><br><span class="line">        <span class="attribute">display</span>: block;</span><br><span class="line">        <span class="attribute">box-sizing</span>: border-box;</span><br><span class="line">        <span class="attribute">-webkit-box-sizing</span>: border-box;</span><br><span class="line">        <span class="attribute">width</span>: <span class="variable">@width</span>*<span class="function">sqrt</span>(<span class="number">2</span>);</span><br><span class="line">        <span class="attribute">height</span>: <span class="variable">@width</span>*<span class="function">sqrt</span>(<span class="number">2</span>);</span><br><span class="line">        <span class="attribute">border-left</span>: <span class="variable">@border</span>;</span><br><span class="line">        <span class="attribute">border-bottom</span>: <span class="variable">@border</span>;</span><br><span class="line">        <span class="attribute">position</span>: absolute;</span><br><span class="line">        <span class="attribute">top</span>: (<span class="variable">@width</span>*<span class="number">2</span> - <span class="variable">@width</span>*<span class="function">sqrt</span>(<span class="number">2</span>))/<span class="number">2</span>;</span><br><span class="line">        <span class="attribute">left</span>: (<span class="variable">@width</span>*<span class="number">2</span> - <span class="variable">@width</span>*<span class="function">sqrt</span>(<span class="number">2</span>))/<span class="number">2</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="attribute">-webkit-transform</span>: <span class="function">rotate</span>(<span class="number">45deg</span>);</span><br><span class="line">        <span class="attribute">-webkit-transform-origin</span>: <span class="number">50%</span> <span class="number">50%</span>;</span><br><span class="line">        <span class="attribute">transform</span>: <span class="function">rotate</span>(<span class="number">45deg</span>);</span><br><span class="line">        <span class="attribute">transform-origin</span>: <span class="number">50%</span> <span class="number">50%</span>;</span><br><span class="line">        <span class="comment">// border-top-left-radius: 3px;</span></span><br><span class="line">        <span class="comment">// border-bottom-right-radius: 3px;</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="attribute">-webkit-transform-origin</span>:<span class="number">50%</span> <span class="number">0%</span>;</span><br><span class="line">    <span class="attribute">-webkit-transform</span>:<span class="function">scaleY</span>(<span class="function">unit</span>(<span class="variable">@height</span>/(<span class="number">2</span>*<span class="variable">@width</span>)));</span><br><span class="line">    <span class="attribute">transform-origin</span>:<span class="number">50%</span> <span class="number">0%</span>;</span><br><span class="line">    <span class="attribute">transform</span>:<span class="function">scaleY</span>(<span class="function">unit</span>(<span class="variable">@height</span>/(<span class="number">2</span>*<span class="variable">@width</span>)));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    
+  </div>
+  <footer class="end-sep">
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+
+  
+    <article class="post">
+  <header>
+    
+      <div class="icon"></div>
       <a href="/2015/11/23/less图标讲解/">
   <time datetime="2015-11-23T11:59:39.000Z">
     2015-11-23
